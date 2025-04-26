@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarma Comunitaria - Simulación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="setup-screen" class="screen">
+        <h1>Configuración Inicial</h1>
+        <div class="setup-container">
+            <input type="text" id="community-code" placeholder="Ingresa el código de tu comunidad">
+            <button onclick="joinCommunity()">Unirse a la Comunidad</button>
+        </div>
+    </div>
+
+    <div id="main-screen" class="screen hidden">
+        <h2 id="community-info">Comunidad: <span id="code-display"></span></h2>
+        <div class="alarm-container">
+            <button id="panic-button" onclick="triggerAlarm()">
+                ¡EMERGENCIA!
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
